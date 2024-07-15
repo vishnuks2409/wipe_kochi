@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="container-fluid py-5 mb-5 wow fadeIn page-header" data-wow-delay="0.1s">
+    <div class="container text-center py-5">
+        <h1 class="display-3 text-white mb-4 animated slideInDown">About Us</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="{% url 'home'%}">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About Us</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row g-5 align-items-center mt-5">
+        <div class="col-md-8 wow fadeInUp" data-wow-delay="0.1s">
+            <p class="fs-5 fw-bold text-primary ">About Us <img class="img-fluid" src="{% static 'img/green.png' %}" alt="Icon" width="70px">
+            </p>
+            <h1 class="display-5 mb-4">Welcome to Wipe Kochi Online Scrap Selling and Cleaning Services </h1>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row g-5 align-items-center mt-2">
+        <div class="col-lg-6">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                    <img class="rounded"  src="{% static 'img/mess3.avif' %}" alt="image" width="550px" height="300px">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <p class="fs-5 fw-bold text-primary">Wipe Kochi</p>
+            <p class="mb-4">Wipe Kochi is a  Scrap Selling and Cleaning service company.
+                We offer a wide range of services for residential and commercial clients.
+                Our success is built on our commitment to providing an exceptional customer 
+                experience that exceeds expectations.At the core of our success is our unwavering
+                focus on quality and the use of top-of-the-line machinery and equipment, along with
+                highly trained and polite partners. Our expert workmanship and attention to detail 
+                ensure that every aspect of the job is taken care of. We thoroughly vet and regularly
+                audit our partners to ensure maximum efficiency and customer satisfaction. A team of 
+                background-verified, technically trained experts is at the core of Wipe Kochi.
+                </p>
+        </div>
+        
+    </div>
+    <div class="row  align-items-center mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <h3 class="ms-2">Services We Providing</h3>
+        <ul class="ms-5 fw-bold">
+            <li>Scrap Selling</li>
+            <li>Home Cleaning</li>
+            <li>Office Cleaning</li>
+            <li>Sofa Cleaning</li>
+            <li>Kitchen Cleaning</li>
+            <li>bathroom Cleaning</li>
+            <li>Disinfection & Sanitization</li>
+        </ul>
+        <p class="">We look forward to creating an ecosystem within the social system that 
+            of conscious waste disposal behavior, increased awareness that promotes
+            waste segregation at source, and enthusiasm towards recycling as one of
+            the effective waste solutions in India.
+            Join us in our journey towards a cleaner, greener future. Together,
+            we can make a significant difference one scrap at a time. Contact 
+            Wipe Kochi today and experience the convenience, reliability, and
+            environmental consciousness that sets us apart as your trusted online
+            service provider.</p>
+        <p class="fs-4 fw-bold text-primary ms-3 mt-3">Thank You</p>
+
+    </div>
+</div>
+
+
+
+{% endblock content %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <form method="post">
+            {% csrf_token%}
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Enter OTP</label>
+              <input type="number" name="otp1" class="form-control w-50"  >
+              <div id="emailHelp" class="form-text">
+                {% for message in messages %}
+                    <h4 class="{{ message.tags }}" style="margin-left: 195px;margin-top: 10px;">{{ message }}</h4>
+                 {% endfor %}
+                </div>
+
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+    </div>
+
+</div>
+
+{% endblock content %}

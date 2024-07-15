@@ -1,0 +1,385 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content%}
+
+  <!-- Carousel Start -->
+  <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="{% static 'img/banner1.jpg' %}" alt="Image" height="650px">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h1 class="display-1 text-white mb-5 animated slideInDown">Got Scrap?<br>Sell it to Us.</h1>
+                                <P class="text-white mb-5 animated slideInDown">Sell us your recyclable wastes and help contribute to the circular economy.</P>
+                                <a href="" class="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="{% static 'img/cleanbanner1.jpg' %}" alt="Image" height="650px">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-7">
+                                <h1 class="display-1 text-white mb-5 animated slideInDown">Cleaning is not a task, it’s a lifestyle.</h1>
+                                <a  class="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!-- Carousel End -->
+
+
+<!-- Top Feature Start -->
+<div class="container-fluid top-feature py-5 pt-lg-0">
+    <div class="container py-5 pt-lg-0">
+        <div class="row gx-0">
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                            <img class="img-fluid" src="{% static 'img/icon/home cleaning.png' %}" alt="Icon"  width="50px">
+                        </div>
+                        <div class="ps-3">
+                            <h4>Professional Cleaning</h4>
+                            <span>We make your spcae clean and shine</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                            <img class="img-fluid" src="{% static 'img/icon/waste.png' %}" alt="Icon"  width="50px">
+                        </div>
+                        <div class="ps-3">
+                            <h4>Scrap Recycling</h4>
+                            <span>Sell your recyclable Scrap and make the world more beautiful</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                            <img class="img-fluid" src="{% static 'img/schedule6.png' %}" alt="Icon"  width="50px">
+                        </div>
+                        <div class="ps-3">
+                            <h4>24/7 Available</h4>
+                            <span>service that is available at everyday</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Top Feature End -->
+
+<!-- About Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5 align-items-end">
+            <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
+                <img class="img-fluid rounded" data-wow-delay="0.1s" src="{% static 'img/about3.jpg' %}" height="300px">
+            </div>
+            <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
+                <h1 class="display-1 text-primary mb-0">5</h1>
+                <p class="text-primary mb-4">Year of Experience</p>
+                <h1 class="display-5 mb-4">We make the world healthier and happier</h1>
+                <p class="mb-4">Wipe Kochi is a  Scrap Selling and Cleaning service company.
+                    We offer a wide range of services for residential and commercial clients.Join us in our journey towards a cleaner, greener future. Together,
+                    we can make a significant difference one scrap at a time.</p>
+                <a class="btn btn-primary py-3 px-4" href="{%url 'about' %}">Explore More</a>
+            </div>
+            <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row g-5">
+                    <div class="col-12 col-sm-6 col-lg-12">
+                        <div class="border-start ps-4">
+                            <i class="fa fa-award fa-3x text-primary mb-3"></i>
+                            <h4 class="mb-3">Award Winning</h4>
+                            <span>Green Kerala Award Winner in 2023</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-12">
+                        <div class="border-start ps-4">
+                            <i class="fa fa-users fa-3x text-primary mb-3"></i>
+                            <h4 class="mb-3">Dedicated Team</h4>
+                            <span>we have a group of specialist professionals for the advanced cleaning services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<!-- Facts Start -->
+<div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="{% static 'img/clean1.jpg' %}">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                <h1 class="display-4 text-white" data-toggle="counter-up">687+</h1>
+                <span class="fs-5 fw-semi-bold text-light">Happy Clients</span>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                <h1 class="display-4 text-white" data-toggle="counter-up">1300 ton</h1>
+                <span class="fs-5 fw-semi-bold text-light">Scrap Recycled</span>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                <h1 class="display-4 text-white" data-toggle="counter-up">30+</h1>
+                <span class="fs-5 fw-semi-bold text-light">Dedicated Staff</span>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                <h1 class="display-4 text-white" data-toggle="counter-up">12+</h1>
+                <span class="fs-5 fw-semi-bold text-light">Awards Achieved</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Facts End -->
+
+
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="fs-5 fw-bold text-primary">Why Choosing Us!</p>
+                    <h1 class="display-5 mb-4">Few Reasons Why People Choosing Us!</h1>
+                    <p class="mb-4">The Reasons to Choosing Wipe Kochi is our commitment to providing an exceptional customer 
+                        experience that exceeds expectations.At the core of our success is our unwavering
+                        focus on quality and the use of top-of-the-line machinery and equipment, along with
+                        highly trained and polite partners.</p>
+                    <a class="btn btn-primary py-3 px-4" >Explore More</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                        <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                            <i class="fa fa-check fa-3x text-primary"></i>
+                                        </div>
+                                        <h4 class="mb-0">100% Satisfaction</h4>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                        <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                            <i class="fa fa-users fa-3x text-primary"></i>
+                                        </div>
+                                        <h4 class="mb-0">Dedicated Team</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                            <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
+                                <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                    <i class="fa fa-tools fa-3x text-primary"></i>
+                                </div>
+                                <h4 class="mb-0">Modern Equipment</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-bold text-primary">Our Services</p>
+                <h1 class="display-5 mb-5">Services That We Offer For You</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="{% static 'img/clean1.jpg' %}" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="{% static 'img/icon/home cleaning.png' %}" alt="Icon" width="55px">
+                            </div>
+                            <h4 class="mb-3">Cleaning Service</h4>
+                            <p class="mb-4">We offer a wide range of cleaning services for residential and commercial clients.</p>
+                            <a class="btn btn-sm" href="{% url 'cleaning' %}"><i class="fa fa-plus text-primary me-2"></i>Explore More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="{% static 'img/waste.jpg' %}" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="{% static 'img/icon/waste.png' %}" alt="Icon"  width="55px">
+                            </div>
+                            <h4 class="mb-3">Sell Scrap</h4>
+                            <p class="mb-4">Sell us your recyclable wastes and help contribute to the circular economy </p>
+                            <a class="btn btn-sm" href="{% url 'scrap' %}"><i class="fa fa-plus text-primary me-2"></i>Expolre More</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-bold text-primary">Our Projects</p>
+                <h1 class="display-5 mb-5">Some Of Our Wonderful Projects</h1>
+            </div>
+            <div class="row wow fadeInUp" data-wow-delay="0.3s">
+                
+            </div>
+            <div class="row g-4 portfolio-container">
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <img  src="{% static 'img/p8.jpg' %}" alt="" height="340px">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Home Sanitizing</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="{% static 'img/p8.jpg' %}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="portfolio-inner rounded">
+                        <img  src="{% static 'img/p6.jpeg' %}" alt="" height="340px">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Office Cleaning</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="{% static 'img/p6.jpeg' %}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="portfolio-inner rounded">
+                        <img  src="{% static 'img/p7.jpg' %}" alt="" height="340px">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Sofa Cleaning</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="{% static 'img/p7.jpg' %}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-inner rounded">
+                        <img src="{% static 'img/p5.jpg' %}" alt="" height="340px">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Scrap Sepration</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="{% static 'img/p5.jpg' %}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="portfolio-inner rounded">
+                        <img  src="{% static 'img/p3.png' %}" alt="" height="340px">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Kitchen Cleaning</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="{% static 'img/p3.png' %}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="portfolio-inner rounded">
+                        <img  src="{% static 'img/p4.jpg' %}" alt="" height="340px">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Scrap Recycling</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="{% static 'img/p4.jpg' %}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+
+    
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="fs-5 fw-bold text-primary">Testimonial</p>
+                    <h1 class="display-5 mb-5">What Our Clients Say About Us!</h1>
+                    <p class="mb-4"></p>
+                    <a class="btn btn-primary py-3 px-4" >See More</a>
+                </div>
+                <div class="col-lg-7 wow fadeInUp" >
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="img-fluid  rounded-circle mb-3" src="{% static 'img/anandhu.jpg' %}" alt="" width="80px" height="80px">
+                            <h4>Anandhu</h4>
+                            <img class="img-fluid" src="{% static 'img/rating.jpg' %}" alt="" width="80px" height="25px">
+                            <p class="fs-5">I was about to replace my sofa and my friend suggested WipeKochi team for sofa cleaning... as heard they done a fantastic job...and my sofa looks brand new... </p>
+                            
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid  rounded-circle mb-3" src="{% static 'img/Sreejith.jpg' %}" alt="" width="80px" height="80px">
+                            <h4>Sreejith</h4>
+                            <img class="img-fluid" src="{% static 'img/rating.jpg' %}" alt="" width="80px" height="20px">
+
+                            <p class="fs-5">The best cleaning company I have seen so far. I wanted to deep clean my 3 BHK flat in Kaloor. The workers reached on time and very professionally cleaned the house. No supervision required and each one knew their task very well. </p>
+                            </div>
+                        </div>
+                        
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+{% endblock content %}

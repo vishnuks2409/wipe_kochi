@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <p class="fs-5 fw-bold text-primary">Book Appoinments</p>
+            <h1 class="display-5 mb-5">Get Appoinments Now</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="bg-light rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text" required class="form-control border-0" id="gname" placeholder="Gurdian Name" name="name">
+                                    <label for="gname">Name</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text" required class="form-control border-0" id="cname" placeholder="Child Name" name="phone">
+                                    <label for="cname">Mobile Number</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="date" required class="form-control border-0" id="date" name="date">
+                                    <label for="gmail">Pick Date</label>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text" required class="form-control border-0" id="cage" value="{{obj.name}}" placeholder="Child Age" name="Service">
+                                    <label for="cage">Service Type</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="email" required class="form-control border-0" id="gmail" placeholder="Gurdian Email" name="email">
+                                    <label for="gmail">Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control border-0" required placeholder="Leave a message here" id="message" name="address" style="height: 100px"></textarea>
+                                    <label for="message">Address</label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="btn btn-primary py-3 px-4"  type="submit" >Submit Now</button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <p class="fs-5 fw-bold text-primary">Admin Panal</p>
+            <h1 class="display-5 mb-5">Booking Details</h1>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-md-12" style="margin-left: 330px;">
+        <a class="btn btn-primary py-3 px-4 " href="{% url 'service_details' %}">Service Bookings</a>
+        <a class="btn btn-primary py-3 px-4 ms-5" href="{% url 'scrap_details' %}">Scrap Pickups</a>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

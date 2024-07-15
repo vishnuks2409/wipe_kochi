@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row p-4 mt-2">
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="display-4 mb-5 text-primary"> Booking Completed Successfully<img class="img-fluid" src="{% static 'img/success.png' %}" alt="Icon" width="50px"></h1>
+            <img class="rounded"  src="{% static 'img/mess2.jpg' %}" alt="image" width="400px" height="400px">
+            <p class="fs-5 fw-bold text-primary"> Our Team Will Reach You Soon..</p>
+            <a class="btn btn-primary py-3 px-4" href="{% url 'home' %}">Back to Home</a>
+
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

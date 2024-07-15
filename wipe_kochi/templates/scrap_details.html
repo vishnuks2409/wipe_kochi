@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h1 class="display-5 mb-5">Scrap Pickup Details</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <table class="table table-bordered border-dark">
+            <tr>
+                <th>Pickup Id</th>
+                <th>Customer Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Scrap Type</th>
+                <th>Date</th>
+                <th>Message</th>
+            </tr>
+            {% for i in pickup %}
+                <tr>
+                    <td>{{i.id}}</td>
+                    <td>{{i.name}}</td>
+                    <td>{{i.phone}}</td>
+                    <td>{{i.email}}</td>
+                    <td>{{i.address}}</td>
+                    <td>{{i.scrap_type}}</td>
+                    <td>{{i.date}}</td>
+                    <td>{{i.message}}</td>
+
+                
+                </tr>
+            {%endfor%}
+        </table>
+    </div>
+
+
+</div>
+
+{% endblock content %}

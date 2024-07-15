@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{%load static %}
+
+
+{% block content %}
+
+<div class="container-fluid py-5">
+    <div class="container">
+        <h1 class="choose_taital text-center mt-1 mb-2 text-primary">Select Your Category</h1>
+
+        <div class="row gx-0 ">
+            {% for i in types %}
+            <div class="col-md-3 wow fadeIn mt-3" data-wow-delay="0.1s">
+                <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 190px;margin-left: 10px;">
+                    <div class="d-flex">
+                        
+                        <div class="flex-shrink-0  ">
+                            <img class="img-fluid" src="{{i.image.url}}" alt="Icon"  width="70px">
+                        </div>
+                        <div class="ps-3">
+                            <h4>{{i.category}}</h4>
+                            <a class="btn btn-primary btn-sm" href="{% url 'scrap_pickup' i.id %}">Choose</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
